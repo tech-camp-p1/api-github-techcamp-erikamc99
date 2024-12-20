@@ -35,7 +35,7 @@ const userCard = (user) => {
                 <li><strong>${user.following}</strong>&nbspFollowing</li>
                 <li><strong>${user.public_repos}</strong>&nbspRepos</li>
             </ul>    
-            <div id="repo"></div>
+            <div class="repo" id="repo"></div>
         </div>
     </div>  
     `;
@@ -47,6 +47,7 @@ const addRepos = (repos) => {
     cardRepos.innerHTML = ''; // Clear previous repos
     repos.slice(0, 5).forEach((repo) => {
         const repoElement = document.createElement('a');
+        repoElement.classList.add('repo');
         repoElement.href = repo.html_url;
         repoElement.target = '_blank';
         repoElement.innerText = repo.name;
