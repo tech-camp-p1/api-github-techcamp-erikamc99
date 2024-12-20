@@ -90,28 +90,16 @@ body {
   margin-left: 0.5rem;
 }
 
-#repo {
+.repo {
   text-decoration: none;
+  color: #fff;
+  background-color: #212a72;
   font-size: 0.7rem;
   padding: 0.25rem 0.5rem;
-  margin-top: 12px;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: inline-block;
 }
-
-#repo a {
-  background-color: #212A72;
-  color:  #fff;
-  text-decoration: none;
-  height: fit-content;
-  border-radius: 8px;
-  margin: 0;
-  padding: 6px;
-}
-
 
 @media (max-width: 500px) {
   .card {
